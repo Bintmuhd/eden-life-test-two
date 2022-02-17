@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Eden Test Two</title>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <div>
+                <img src="./style/assets/profile.png" alt="an image" />
+            </div>
+            <p style="padding-left: 1rem;">Good Morning Silm!</p>
+        </header>
+        <!--  -->
+        <div class="schedule-section">
+            <h2>Schedule</h2>
+            <p class="config-btn">Reconfigure Services</p>
+        </div>
+        <!--  -->
+        <div class="green-div">
+            <p>Your account is inactive. <span style="font-weight:600">15% off </span>offer until June 23.</p>
+            <button style="text-align: center;">
+                <p>N75,000</p>
+                <p style="width: 100%;">Pay 62,800</p>
+            </button>
+        </div>
+         <!--  -->
+         <div class="orange-div">
+            <p>View your meals for the week.</p>
+            <button id="checkEmBtn" >
+                Check ‘em
+            </button>
+        </div>
+         <!--  -->
+         <div class="blue-div">
+           <h3>Getting Started</h3>
+           <p>Let’s answer any questions you have left!</p>
+           <div class="blue-grid">
+                <div>
+                    <div class="call">
+                        <img src="./style/assets/Call.png" alt="call img"/>
+                    </div>
+                    <p class="p-text">Set up a call with your gardener</p>
+                    <span class="call-text">Do it<img src="./style/assets/purple-arrow.png" alt="img"/></span>
+                </div>
+                <div>
+                    <div class="play">
+                        <img src="./style/assets//Play.png" alt="play img"/>
+                    </div>
+                    <p  class="p-text">Lose yourself to this video</p>
+                    <span class="play-text">Play<img src="./style/assets/orange-arrow.png" alt="img"/></span>
+                </div>
+           </div>
+        </div>
+        <h3 style="color: #00C267;">Tomorrow</h3>
+        <div class="time-stamp">
+            <p>9 - 10am</p>
+            <div class="light-blue">
+                <p>Your cleaner is coming in to give your apartment the looks.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><img src="./style/assets/calendar-range.png"/><p>Schedule</p></li>
+            <li><img src="./style/assets/history.png"/><p>History</p></li>
+            <li><img src="./style/assets/notifications.png"/><p>Notifications</p></li>
+            <li><img src="./style/assets/message.png"/><p>Chat</p></li>
+        </ul>
+    </footer>
+
+
+<!-- The Meals Modal goes here -->
+<section id="mealSection" class="mealSection">
+    <div class="modalOverlay">
+        <div id="meals-body" >
+              <nav>
+                <h2 style="padding-left: 1rem">Today's Meal</h2>
+                <button class="close-btn" id="meal-close-btn">
+                     <img src="./style/assets/close.png" alt="close icon"/>
+                </button>
+            </nav>
+            <main class="main-list" style="background-color: white">
+                <ul id="foodList">
+                </ul>
+            </main>
+        </div>
+    </div>
+</section>
+
+<!-- SingleFood Section -->
+<section id="singleFood">
+    <div class="secondModalOverlay">
+    <div class="foodImg">
+    </div>
+    </div>
+</section>
+</body>
+
+<script src="./main.js"></script>
+</html>
